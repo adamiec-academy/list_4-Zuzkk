@@ -6,4 +6,4 @@ def info(data):
 
 
 def border_map(a, b):
-    return [['.']]
+    return [a * ['X']] + [['X'] + (a - 2) * ['.'] + ['X'] for _ in range(1, b-1)] + [a * ['X']]
