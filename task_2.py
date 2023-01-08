@@ -2,10 +2,10 @@ def my_split(text):
     words_list = []
     word = ""
     for letter in text.strip():
-        if letter == " ":
+        if letter == " " and word:
             words_list.append(word)
             word = ""
-        else:
+        elif letter != " ":
             word += letter
     if word:
         words_list.append(word)
