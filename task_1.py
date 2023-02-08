@@ -1,2 +1,4 @@
 def is_palindrome(text):
-    return False
+    new_text = text.lower()
+    new_text = "".join(new_text.split())
+    return new_text == new_text[::-1]
