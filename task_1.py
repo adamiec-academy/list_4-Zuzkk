@@ -1,6 +1,4 @@
 def is_palindrome(text):
-    new_text = ""
-    lower_text = text.lower()
-    text_list = lower_text.split()
-    new_text = "".join(text_list)
+    new_text = text.lower()
+    new_text = "".join(new_text.split())
     return new_text == new_text[::-1]
