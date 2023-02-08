@@ -6,7 +6,7 @@ def info(data):
 
 def border_map(a, b):
     if a == 1:
-        return [b * 'X']
+        return [b * ['X']]
     elif b == 1:
         return [a * ['X']]
     else:
