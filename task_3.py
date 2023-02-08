@@ -4,7 +4,6 @@ def min_max(data):
     for i in data[1:]:
         if i < minimum:
             minimum = i 
-        else: 
-            if i > maximum:
-                maximum = i
+        elif i > maximum:
+            maximum = i
     return (minimum,maximum)
